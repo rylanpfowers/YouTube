@@ -155,5 +155,9 @@ if __name__ == '__main__':
     Wartortle = Pokemon('Wartortle', 'Water', ['Bubblebeam', 'Water Gun', 'Headbutt', 'Surf'],{'ATTACK': 5, 'DEFENSE':5})
     Ivysaur = Pokemon('Ivysaur\t', 'Grass', ['Vine Wip', 'Razor Leaf', 'Bullet Seed', 'Leech Seed'],{'ATTACK':4, 'DEFENSE':6})
 
-
-    Charizard.fight(Blastoise) # Get them to fight
+	#Selection of random Pokemon
+    list = [Charizard,Blastoise,Venusaur,Charmander,Squirtle,Bulbasaur,Charmeleon,Wartortle,Ivysaur]
+    pokemon1 = np.random.choice(8)
+    pokemon2 = np.random.choice(8)
+	
+    list[pokemon1].fight(list[pokemon2]) # Get them to fight
